@@ -46,7 +46,7 @@ El proyecto aplica una arquitectura basada en componentes, uso de hooks como `us
 
 ## Estructura principal del proyecto
 
-![Calculadora principal](./public/img/estructura.png.png)
+![Estructura](./public/img/estructura.png)
 
 ## Conceptos aplicados
 
