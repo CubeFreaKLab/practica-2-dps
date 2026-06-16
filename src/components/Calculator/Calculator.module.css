@@ -1,0 +1,135 @@
+.wrapper {
+  width: min(100%, 1180px);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 32px;
+  font-family: var(--retro-font);
+}
+
+/* Ventana retro tipo XP */
+.calculatorWindow {
+  width: clamp(540px, 48vw, 620px);
+  flex: 0 0 clamp(540px, 48vw, 620px);
+  display: flex;
+  flex-direction: column;
+  border: 4px solid var(--xp-border-dark);
+  border-radius: 2px;
+  background: var(--xp-window-gray);
+  box-shadow:
+    inset 3px 3px 0 #7eb6ff,
+    inset -3px -3px 0 #052a8d,
+    10px 10px 0 rgb(34 45 84 / 20%);
+}
+
+.titleBar {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 7px 9px 7px 16px;
+  border-bottom: 4px solid var(--xp-border-dark);
+  color: var(--xp-title-text);
+  background: var(--xp-blue);
+  text-shadow: 1px 1px 0 #001b63;
+}
+
+.titleText {
+  overflow: hidden;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.windowControls {
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 7px;
+}
+
+.windowButton {
+  width: 38px;
+  height: 38px;
+  display: inline-grid;
+  place-items: center;
+  border: 3px solid #e9f4ff;
+  border-right-color: #0f3d9a;
+  border-bottom-color: #0f3d9a;
+  border-radius: 2px;
+  color: #07306f;
+  background: #dbeafe;
+  box-shadow:
+    inset 3px 3px 0 #ffffff,
+    inset -3px -3px 0 #4f77b7;
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.closeButton {
+  color: #ffffff;
+  background: #d64a2f;
+  box-shadow:
+    inset 3px 3px 0 #ffb29f,
+    inset -3px -3px 0 #8e1d12;
+}
+
+.calculatorBody {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 26px 28px 30px;
+  border-top: 3px solid var(--xp-border-light);
+  background: var(--xp-window-inner);
+}
+
+@media (max-width: 1220px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .calculatorWindow {
+    width: min(100%, 680px);
+    flex-basis: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .wrapper {
+    gap: 24px;
+  }
+
+  .calculatorWindow {
+    width: 100%;
+  }
+
+  .titleBar {
+    min-height: 46px;
+    padding: 6px 8px 6px 12px;
+    border-bottom-width: 3px;
+  }
+
+  .titleText {
+    font-size: 1.25rem;
+  }
+
+  .windowControls {
+    gap: 5px;
+  }
+
+  .windowButton {
+    width: 30px;
+    height: 30px;
+    border-width: 2px;
+    font-size: 1.05rem;
+  }
+
+  .calculatorBody {
+    gap: 18px;
+    padding: 18px;
+  }
+}

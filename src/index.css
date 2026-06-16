@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --retro-font: "Courier New", "Lucida Console", "MS Sans Serif", monospace;
+  --page-bg: #f4f4ef;
+  --text-color: #101010;
+  --xp-window-gray: #d9d6cf;
+  --xp-window-inner: #eeece6;
+  --xp-border-light: #ffffff;
+  --xp-border-dark: #2f4f9e;
+  --xp-border-shadow: #77736b;
+  --xp-blue-light: #46a0ff;
+  --xp-blue: #0066ee;
+  --xp-blue-dark: #0640b6;
+  --xp-title-text: #ffffff;
+  --calculator-title: #101010;
+  --calculator-muted: #3d3d3d;
+  --calculator-display-bg: #cddfff;
+  --calculator-display-text: #123c9c;
+  --calculator-button-bg: #e8e8e4;
+  --calculator-button-hover: #f6f6f1;
+  --calculator-button-text: #101010;
+  --calculator-number-bg: #efefeb;
+  --calculator-operator-bg: #e4e4df;
+  --calculator-operator-hover: #f5f5ef;
+  --calculator-operator-text: #202020;
+  --calculator-equals-bg: #e4e4df;
+  --calculator-equals-hover: #f5f5ef;
+  --calculator-equals-text: #202020;
+  --calculator-special-bg: #e4e4df;
+  --calculator-special-hover: #f5f5ef;
+  --calculator-special-text: #202020;
+  --history-paper-bg: #fffdf0;
+  --history-paper-line: #d7e0ec;
+  --calculator-focus: #001a63;
+  font-family: var(--retro-font);
+  color: var(--text-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--page-bg);
+  background-image: url("/backgrounds/xp-minimalist.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+button {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}

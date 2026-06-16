@@ -1,0 +1,14 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+}
+
+@media (max-width: 720px) {
+  .app {
+    align-items: flex-start;
+    padding: 1rem;
+  }
+}
