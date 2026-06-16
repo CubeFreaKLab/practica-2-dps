@@ -13,7 +13,7 @@ Proyecto desarrollado con **React + Vite + TypeScript + TailwindCSS** para la ma
 Esta práctica consiste en el desarrollo de una calculadora funcional utilizando React con TypeScript.
 El proyecto aplica una arquitectura basada en componentes, uso de hooks como `useState` y `useEffect`, validaciones de entrada y estilos personalizados con TailwindCSS y CSS Modules.
 
-## Capturas de la calculadora
+## Captura de la calculadora
 
 ![Calculadora principal](./public/img/calculadora.png)
 
