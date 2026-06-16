@@ -42,7 +42,6 @@ El proyecto aplica una arquitectura basada en componentes, uso de hooks como `us
 * Historial de operaciones
 * Persistencia del historial con `localStorage`
 * Diseño responsive básico
-* Estilo visual retro personalizado
 
 ## Estructura principal del proyecto
 
